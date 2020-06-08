@@ -1,4 +1,4 @@
-d% Graduate thesis BSU Format
+% Graduate thesis BSU Format
 % Kasper van Wijk (original author)
 % Dylan Mikesell (current maintainer)
 
@@ -9,13 +9,18 @@ d% Graduate thesis BSU Format
 % custom file for BSU style by TDM, 2019:
 \usepackage{BSUthesis}
 \usepackage{textcomp}
-\usepackage[demo]{graphicx}
+\usepackage{graphicx}
 \usepackage{caption}
 \usepackage{subcaption}
 \usepackage{float}
+\usepackage{rotating, graphicx}
 % \usepackage{acro}
 % probably a good idea for the nomenclature entries:
 % \acsetup{first-style=short}
+
+% MY VARIABLES 
+\newcommand{\isostd}{$\pm$ 0.0\~6 \textdegree C}
+\newcommand{\gradstd}{$\pm$ 0.00\~3 \textdegree C}
 
 \newcommand\inputfile[1]{%
     \InputIfFileExists{#1}{}{\typeout{No file #1.}}%
@@ -104,6 +109,8 @@ d% Graduate thesis BSU Format
 \input chapter_4_results
 %------------------------------------------------------------------------------
 \input chapter_5_discussion
+
+\input chapter_6_conclusion
 
 % bibliography:
 \addcontentsline{toc}{chapter}{References} 
