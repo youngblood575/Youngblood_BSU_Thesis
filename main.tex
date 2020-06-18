@@ -15,13 +15,16 @@
 \usepackage{float}
 \usepackage{rotating, graphicx}
 \usepackage{hyperref}
+\usepackage{lineno}
+\usepackage{pdfpages}
+%\linenumbers
 % \usepackage{acro}
 % probably a good idea for the nomenclature entries:
 % \acsetup{first-style=short}
 
 % MY VARIABLES 
-\newcommand{\isostd}{$\pm$ 0.0\~6 \textdegree C}
-\newcommand{\gradstd}{$\pm$ 0.00\~3 \textdegree C}
+\newcommand{\isostd}{$\pm$ 0.06 \textdegree C}
+\newcommand{\gradstd}{$\pm$ 0.003 \textdegree C/m}
 
 \newcommand\inputfile[1]{%
     \InputIfFileExists{#1}{}{\typeout{No file #1.}}%
@@ -42,7 +45,7 @@
 %------------------------------------------------------------------------------
 \author{Peter J. Youngblood}
 %------------------------------------------------------------------------------
-\degree{Master of Sciencce}
+\degree{Master of Science}
 % \degreetype{Doctor of Philosophy}
 %------------------------------------------------------------------------------
 \discipline{Hydrologic Sciences}
@@ -84,9 +87,9 @@
 \addcontentsline{toc}{chapter}{List of figures} 
 \listoffigures
 %------------------------------------------------------------------------------
-\cleardoublepage
-\addcontentsline{toc}{chapter}{List of tables} 
-\listoftables
+%\cleardoublepage
+%\addcontentsline{toc}{chapter}{List of tables} 
+%\listoftables
 %------------------------------------------------------------------------------
 % print abbreviations
 \printglossary[title={List of abbreviations},type=\acronymtype]
